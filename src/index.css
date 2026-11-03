@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-surface font-body text-on-surface antialiased; }
+  h1, h2, h3, h4 { @apply font-head; }
+}
+
+@layer components {
+  .icon { font-family: 'Material Symbols Outlined'; font-weight: normal; font-style: normal; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; direction: ltr; font-feature-settings: 'liga'; -webkit-font-feature-settings: 'liga'; }
+  .container-x { @apply max-w-[1280px] mx-auto px-4 md:px-12; }
+  .label-code { @apply font-mono text-xs tracking-wider; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-primary text-white font-head font-semibold transition hover:bg-gold hover:-translate-y-px; }
+  .btn-gold { @apply inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg font-head font-bold text-primary transition hover:-translate-y-px; background: linear-gradient(135deg, #C59B27 0%, #E0B438 100%); }
+  .btn-outline { @apply inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg border-[1.5px] border-primary text-primary font-head font-semibold transition hover:bg-[#EEF2F6]; }
+  .card { @apply bg-white rounded-2xl border border-[#E2E8F0] shadow-card; }
+  .field { @apply w-full h-12 px-3 rounded-lg bg-white border border-[#CBD5E1] text-on-surface focus:outline-none focus:ring-2 focus:ring-primary; }
+  .eyebrow { @apply label-code uppercase font-bold text-gold; }
+}
