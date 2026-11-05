@@ -81,7 +81,7 @@ export const translations = {
       destFilterLabel: 'Popular Destination Filter',
     },
     fleet: {
-      heroEyebrow: 'TAT Licensed & Fully Insured Commercial Fleet',
+      heroEyebrow: 'Fully Insured Commercial Fleet',
       heroTitle: 'Our Premium Vehicle Fleet',
       heroDesc: 'Meticulously maintained, sanitized and chauffeured by certified English-speaking professionals.',
       stats: [
@@ -251,7 +251,7 @@ export const translations = {
       destFilterLabel: 'เลือกกรองตามจุดหมายปลายทาง',
     },
     fleet: {
-      heroEyebrow: 'มีใบอนุญาต ททท. & ประกันภัยชั้น 1 ครบวงจร',
+      heroEyebrow: 'บริการรถมาตรฐานพร้อมประกันภัยครบวงจร',
       heroTitle: 'รถบริการคุณภาพระดับพรีเมียมของเรา',
       heroDesc: 'ผ่านการบำรุงรักษาอย่างพิถีพิถัน สะอาด ปลอดเชื้อ ขับขี่โดยพนักงานขับรถมืออาชีพที่ผ่านการอบรม',
       stats: [

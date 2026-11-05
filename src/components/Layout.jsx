@@ -92,7 +92,6 @@ function LayoutInner() {
           <div className="md:col-span-2">
             <div className="font-head font-bold text-xl">{t('nav.title')}</div>
             <p className="mt-2 text-white/70 max-w-md text-sm">{t('nav.footerDesc')}</p>
-            <p className="mt-4 label-code text-gold">{CONTACT.license}</p>
           </div>
           <div>
             <div className="font-head font-semibold mb-3">{t('nav.explore')}</div>

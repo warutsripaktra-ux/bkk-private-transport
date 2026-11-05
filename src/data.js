@@ -7,7 +7,6 @@ export const CONTACT = {
   email: 'booking@bkkprivatecar.com',
   whatsapp: 'https://wa.me/66843775671',
   address: '888/14 Bangna-Trat Frontage Rd, Bang Phli, Samut Prakan 10540',
-  license: 'TAT License #11/09842',
 };
 
 export const VEHICLES_DATA = {
