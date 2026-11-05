@@ -102,7 +102,8 @@ function LayoutInner() {
           </div>
           <div className="text-sm text-white/70 space-y-2">
             <div className="font-head font-semibold text-white mb-3">{t('nav.contactInfo')}</div>
-            <a className="block hover:text-white" href={`tel:${CONTACT.tel}`}>{CONTACT.phone}</a>
+            <a className="block hover:text-white" href={`tel:${CONTACT.tel}`}>โทร: {CONTACT.phone}</a>
+            <div className="text-white/80">LINE: {CONTACT.linePhone}</div>
             <div className="flex flex-wrap gap-2 pt-1">
               {[['whatsapp', 'WhatsApp'], ['line', 'LINE'], ['wechat', 'WeChat']].map(([k, l]) => (
                 <button key={k} onClick={() => showQR(k)} className="px-3 py-1 rounded-full border border-white/30 text-white hover:bg-white/10">{l}</button>
