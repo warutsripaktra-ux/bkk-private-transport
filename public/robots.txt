@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bkk-private-transport.vercel.app/sitemap.xml
