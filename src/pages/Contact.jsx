@@ -15,6 +15,7 @@ export default function Contact() {
     wa && [wa[0], wa[1], CONTACT.phone, 'whatsapp'],
     line && [line[0], line[1], CONTACT.linePhone, 'line'],
     ['mark_chat_unread', 'WeChat', CONTACT.wechat, 'wechat'],
+    ['thumb_up', 'Facebook Page', 'ติดตามข่าวสารและโปรโมชั่น', CONTACT.facebook],
     call && [call[0], call[1], CONTACT.phone, `tel:${CONTACT.tel}`],
   ].filter(Boolean);
   const isQR = (x) => ['whatsapp', 'line', 'wechat'].includes(x);
@@ -41,7 +42,7 @@ export default function Contact() {
           const cls = 'card p-5 flex items-center gap-4 hover:shadow-raised transition w-full';
           return isQR(target)
             ? <button key={label} type="button" onClick={() => showQR(target)} className={cls}>{inner}</button>
-            : <a key={label} href={target} className={cls}>{inner}</a>;
+            : <a key={label} href={target} target={target.startsWith('http') ? '_blank' : undefined} rel={target.startsWith('http') ? 'noreferrer' : undefined} className={cls}>{inner}</a>;
         })}
       </section>
     </>

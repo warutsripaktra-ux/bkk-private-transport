@@ -107,6 +107,7 @@ function LayoutInner() {
               {[['whatsapp', 'WhatsApp'], ['line', 'LINE'], ['wechat', 'WeChat']].map(([k, l]) => (
                 <button key={k} onClick={() => showQR(k)} className="px-3 py-1 rounded-full border border-white/30 text-white hover:bg-white/10">{l}</button>
               ))}
+              <a href={CONTACT.facebook} target="_blank" rel="noreferrer" className="px-3 py-1 rounded-full border border-white/30 text-white hover:bg-white/10">Facebook</a>
             </div>
             <div>{CONTACT.address}</div>
           </div>

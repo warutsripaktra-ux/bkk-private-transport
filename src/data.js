@@ -6,6 +6,7 @@ export const CONTACT = {
   wechat: 'bkkprivate_transport',
   email: 'booking@bkkprivatecar.com',
   whatsapp: 'https://wa.me/66843775671',
+  facebook: 'https://www.facebook.com/share/1MrzDuQ6AJ',
   address: '888/14 Bangna-Trat Frontage Rd, Bang Phli, Samut Prakan 10540',
 };
 
