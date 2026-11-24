@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1A2B"/>
+      <stop offset="100%" stop-color="#1B2D46"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2CA5A"/>
+      <stop offset="50%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#A57F18"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Circle Background -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="236" fill="none" stroke="url(#gold)" stroke-width="8"/>
+
+  <!-- Taxi Sign on roof -->
+  <path d="M 216 112 L 296 112 C 302 112 306 116 306 122 L 302 136 L 210 136 L 206 122 C 206 116 210 112 216 112 Z" fill="url(#gold)"/>
+  
+  <!-- Car Body Front View -->
+  <g filter="url(#shadow)">
+    <!-- Cabin / Windshield Roof -->
+    <path d="M 166 136 L 346 136 C 368 136 384 150 392 172 L 420 252 L 92 252 L 120 172 C 128 150 144 136 166 136 Z" fill="url(#gold)"/>
+    
+    <!-- Windshield Glass -->
+    <path d="M 172 148 L 340 148 C 352 148 362 156 366 168 L 390 236 L 122 236 L 146 168 C 150 156 160 148 172 148 Z" fill="#0E1A2B"/>
+    
+    <!-- Lower Body / Hood / Bumper -->
+    <path d="M 82 250 L 430 250 C 444 250 456 262 456 278 L 452 352 C 452 368 440 380 424 380 L 416 380 L 416 408 C 416 418 408 426 398 426 L 374 426 C 364 426 356 418 356 408 L 356 380 L 156 380 L 156 408 C 156 418 148 426 138 426 L 114 426 C 104 426 96 418 96 408 L 96 380 L 88 380 C 72 380 60 368 60 352 L 56 278 C 56 262 68 250 82 250 Z" fill="url(#gold)"/>
+
+    <!-- Headlights -->
+    <!-- Left -->
+    <polygon points="90,272 152,272 144,302 90,296" fill="#FFFFFF" rx="4"/>
+    <!-- Right -->
+    <polygon points="422,272 360,272 368,302 422,296" fill="#FFFFFF" rx="4"/>
+
+    <!-- Grille Center -->
+    <path d="M 180 274 L 332 274 C 338 274 342 278 340 284 L 332 320 C 330 326 324 330 318 330 L 194 330 C 188 330 182 326 180 320 L 172 284 C 170 278 174 274 180 274 Z" fill="#0E1A2B"/>
+    
+    <!-- Grille Bars -->
+    <line x1="190" y1="292" x2="322" y2="292" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="196" y1="310" x2="316" y2="310" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- License Plate Area -->
+    <rect x="206" y="342" width="100" height="24" rx="4" fill="#FFFFFF" stroke="#0E1A2B" stroke-width="2"/>
+    <text x="256" y="358" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="12" fill="#0E1A2B" text-anchor="middle" letter-spacing="1">NOI VIP</text>
+
+    <!-- Side Mirrors -->
+    <!-- Left Mirror -->
+    <path d="M 96 230 C 80 230 68 220 70 206 C 72 192 86 186 102 192 L 114 220 Z" fill="url(#gold)"/>
+    <!-- Right Mirror -->
+    <path d="M 416 230 C 432 230 444 220 442 206 C 440 192 426 186 410 192 L 398 220 Z" fill="url(#gold)"/>
+  </g>
+</svg>
